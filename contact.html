@@ -12,5 +12,29 @@
       <a href="./gallery.html">Gallery </a>
       <a href="./contact.html">Contact Us </a>
     </nav>
+
+    <form action="sendmessage.php" method="post">
+     <input type="hidden" value="rebecca.hoffenberg@gmail.com" name="send_to" />
+     <input type="hidden" value="no-reply@test.com" name="send_from" />
+     <input type="hidden" value="index.html" name="redirect" />
+     <input type="hidden" value="Contact Form Submission" name="subject" />
+     <p>Name<br />
+     <input type="text" name="name" /></p>
+
+     <p>Email<br />
+     <input type="text" name="email" /></p>
+
+     <p>Phone<br />
+     <input type="text" name="phone" /></p>
+
+     <p>Comments<br />
+     <textarea type="textarea" name="comments"></textarea></p>
+
+     <input type="submit" value="Submit" />
+     <!-- <input type="hidden" name="redirect" value="file:///C:/Users/Rebecca/Projects/zenovation/index.html">
+     <input type="hidden" name="send_to" value="rebecca.hoffenberg@gmail.com">
+     <input type="hidden" name="send_from" value="rebecca.hoffenberg@gmail.com"> -->
+  </form>
+
   </body>
 </html>
