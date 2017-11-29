@@ -66,6 +66,11 @@ a:hover {
   font-weight: 600;
 }
 
+#current {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
 section {
   display: flex;
   justify-content: center;
@@ -74,8 +79,11 @@ section {
 .container {
   width: 960px;
   display: flex;
-  padding-top: 1rem;
   height: 33rem;
+}
+
+#service-list {
+  flex-direction: column;
 }
 
 .mission {
@@ -101,11 +109,13 @@ p {
   background-size: cover;
 }
 
-.featured-img img {
-  width: 100%;
+ul {
+  line-height: 1.4;
+  list-style: disc inside;
 }
 
 footer {
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
   background-color: #012C40;
@@ -117,7 +127,7 @@ footer a {
 }
 
 footer .container {
-  height: 8rem;
+  height: 5rem;
   justify-content: space-between;
 }
 
