@@ -29,22 +29,65 @@
         <a href="contact.html" id="current">Contact Us </a>
       </nav>
     </header>
-    <form id="contactform" action="//formspree.io/rebecca.hoffenberg@gmail.com" method="post">
-      <span>Name:</span>
-      <input type="text" name="name" placeholder="Your name">
-      <span>Email:</span>
-      <input type="email" name="_replyto" placeholder="Your email">
-      <span>Phone</span>
-      <input type="tel" name="phone" placeholder="Contact phone number">
-      <span>Location - Portland neighborhood or cross street</span>
-      <input type="text" name="location" placeholder="location">
-      <span>Tell us about your project</span>
-      <textarea name="project-description" placeholder="Project information"></textarea>
-      <input type="text" name="_gotcha" style="display: none">
-      <input type="submit" value="Send">
-      <input type="hidden" name="_next" value="./zenovation/thanks.html">
-      <input type="hidden" name="_subject" value="Website contact">
-    </form>
+    <section id = "contact-section">
+      <div class="container">
+        <div id = "company-contact">
+          <h2>Email us: <!-- script for email address masking -->
+              <script type="text/javascript">
+              //<![CDATA[
+              <!--
+              var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+              "x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+              " r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!84{)rt{y+xx=l;=+;" +
+              "lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+              "\"(9)\\\\,%\\\"=>\\\\+\\\\\\\"@\\\\34\\\\0S\\\\7G02\\\\\\\\26\\\\03\\\\03\\" +
+              "\\\\\\2Y03\\\\\\\\34\\\\05\\\\02\\\\\\\\36\\\\05\\\\02\\\\\\\\0101\\\\\\\\1" +
+              "3\\\\06\\\\03\\\\\\\\03\\\\03\\\\00\\\\\\\\02\\\\06\\\\03\\\\\\\\10\\\\06\\" +
+              "\\03\\\\\\\\10\\\\00\\\\01\\\\\\\\00\\\\06\\\\03\\\\\\\\@]4=01\\\\\\\\?690>" +
+              "{=7v$ :9s92r#\\\\\\\\0o02\\\\\\\\/v<%2.fe37\\\\0/\\\\#.21\\\\0R\\\\]T]V@yFS" +
+              "[[FZFP@@VH21\\\\0E\\\\D]GN6H00\\\\\\\\77\\\\17\\\\03\\\\\\\\EGvm}=8'v1s{}ae" +
+              "ad?kay`eh\\\\m(\\\"}fo;n uret}r);+)y+^(i)t(eAodrCha.c(xdeCoarChomfrg.intr=S" +
+              "o+7;12%=;y=2y*))+y(9i>f({i+)i+l;i<0;i=r(foh;gten.l=x,l\\\"\\\\\\\"\\\\o=i,r" +
+              " va){,y(x fontincfu)\\\"\")"                                                 ;
+              while(x=eval(x));
+              //-->
+              //]]>
+              </script>
+          </h2>
+          <h2>Call us: 503-459-3335</h2>
+          <p>For new projects, please fill out the contact form below for the fastest response:</p>
+        </div>
+      </div>
+      <div class="container">
+        <form id="contactform" action="//formspree.io/rebecca.hoffenberg@gmail.com" method="post">
+          <div class="text-fields">
+            <div id="contact-fields">
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required="">
+              <span>Email</span>
+              <input type="email" name="_replyto" placeholder="Your email" required="">
+              <span>Phone</span>
+              <input type="tel" name="phone" placeholder="Contact phone number" required="">
+              <span>Location - Portland neighborhood or cross street</span>
+              <input type="text" name="location" placeholder="Location" required="">
+            </div>
+            <div id="project-field">
+              <span id="description-caption">Tell us about your project</span>
+              <textarea name="project-description" placeholder="Project information" required=""></textarea>
+              <input type="text" name="_gotcha" style="display: none">
+              <input type="hidden" name="_next" value="./zenovation/thanks.html">
+              <input type="hidden" name="_subject" value="Website contact">
+            </div>
+          </div>
+          <div class="buttons">
+            <input type="reset" name="" value="Reset form">
+            <input type="submit" value="Send">
+          </div>
+
+        </form>
+      </div>
+    </section>
+
     <!-- <script>
       var contactform =  document.getElementById('contactform');
       contactform.setAttribute('action', '//formspree.io/' + 'rebecca.hoffenberg' + '@' + 'gmail' + '.' + 'com'); -->
@@ -82,15 +125,5 @@
         </div>
       </div> <!--End footer container-->
     </footer>
-    <!-- jQuery CDN -->
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script> -->
-    <!-- Slick jQuery CDN -->
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-    <!-- Local jQuery script -->
-    <!-- <script src="./resources/js/contact.js" type="text/javascript"></script> -->
-
   </body>
 </html>

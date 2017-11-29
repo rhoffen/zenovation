@@ -80,6 +80,7 @@ section {
   width: 960px;
   display: flex;
   height: 33rem;
+  padding-top: 1rem;
 }
 
 #service-list {
@@ -89,6 +90,7 @@ section {
 .mission {
   width: 50%;
   padding-right: 2rem;
+  margin-top: -1rem;
 }
 
 h1 {
@@ -105,8 +107,9 @@ p {
 
 .featured-img {
   width: 50%;
+  margin-top: -1rem;
   background-image: url("../images/shower-for-two-glass-panels.jpg");
-  background-size: cover;
+  background-size: cover
 }
 
 ul {

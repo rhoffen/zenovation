@@ -1,1 +1,84 @@
+#contact-section {
+  flex-direction: column;
+  align-items: center;
+}
 
+#contact-section .container {
+  height: auto;
+}
+
+#company-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#company-contact h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+#company-contact p {
+  margin-top: 1.5rem;
+  align-self: flex-start;
+  margin-bottom: -1rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+#contactform {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #B8C6CC;
+  border: 1px solid #B8C6CC;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.text-fields {
+  display: flex;
+  flex-direction: row;
+}
+
+#contact-fields, #project-field {
+  width: 100%;
+}
+
+#contact-fields {
+  padding-right: 2%;
+}
+
+span {
+  display: block;
+  font-weight: 600;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 1rem 0;
+}
+
+textarea {
+  height: 88%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+input[type=submit], input[type=reset] {
+  width: 20%;
+  transition: all 250ms;
+  margin: 1rem;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #012C40;
+  color: #e6eff2;
+}
