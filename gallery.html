@@ -6,16 +6,22 @@
       <title>Gallery</title>
       <meta charset="utf-8">
       <link rel="stylesheet" href="./resources/css/reset.css">
-      <link rel="stylesheet" href="./resources/css/style.css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:400,600,700,800" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="shortcut icon" href="resources\images\pagoda-logo_d200.jpg" type="image/x-icon">
-      <link rel="icon" href="resources\images\pagoda-logo_d200.jpg" type="image/x-icon">
+      <link rel="shortcut icon" href="resources/images/pagoda-logo_d200.jpg" type="image/x-icon">
+      <link rel="icon" href="resources/images/pagoda-logo_d200.jpg" type="image/x-icon">
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+      <!-- <link rel="stylesheet" type="text/css" href="resources/js/slick-1.8.0/slick/slick.css"/> -->
+      <!-- <link rel="stylesheet" type="text/css" href="resources/js/slick-1.8.0/slick/slick-theme.css"/> -->
+      <link rel="stylesheet" href="./resources/css/style.css">
+      <link rel="stylesheet" href="./resources/css/gallery.css">
     </head>
   <body>
     <header>
       <div class="brand-bar">
-        <img src="resources\images\pagoda-logo_d200.jpg" alt="Pagoda logo">
+        <img src="resources/images/pagoda-logo_d200.jpg" alt="Pagoda logo">
         <div class="company-block">
           <h1 id="company-name">Zenovation</h1>
           <h2>General Contractors</h2>
@@ -29,6 +35,30 @@
         <a href="contact.html">Contact Us </a>
       </nav>
     </header>
+    <section class = "column-container">
+      <div class="gallery container column-container">
+        <h1>Project Gallery</h1>
+        <h2>Browse the images of projects we've completed.</h2>
+      </div>
+      <div class="carousel">
+        <figure>
+          <img src="resources/images/gallery-images/before-after/20171021_113755-rot.jpg" alt="">
+          <figcaption>5565 - Kitchen before</figcaption>
+        </figure>
+        <figure>
+          <img src="resources/images/gallery-images/before-after/20171021_113814-rot.jpg" alt="">
+          <figcaption>5565 - Kitchen after</figcaption>
+        </figure>
+        <figure>
+          <img src="resources/images/gallery-images/before-after/20171021_114555-rot.jpg" alt="">
+          <figcaption>5565 - Bathroom before</figcaption>
+        </figure>
+        <figure>
+          <img src="resources/images/gallery-images/before-after/20171021_114631-rot.jpg" alt="">
+          <figcaption>5565 - Bathroom after</figcaption>
+        </figure>
+      </div> <!--End before-after carousel-->
+    </section>
     <footer>
       <div class="container">
         <address>
@@ -62,5 +92,22 @@
         </div>
       </div> <!--End footer container-->
     </footer>
+    <!-- <script type="text/javascript" src="resources/js/jquery-3.2.1.min.js"></script> -->
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script
+
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+
+      crossorigin="anonymous"></script>
+
+    <!-- Slick jQuery CDN -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- <script type="text/javascript" src="resources/js/slick-1.8.0/slick/slick.min.js"></script> -->
+    <script type="text/javascript" src = "resources/js/gallery.js">
+    </script> -->
   </body>
 </html>
