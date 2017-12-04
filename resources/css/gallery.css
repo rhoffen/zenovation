@@ -1,11 +1,16 @@
-.gallery.container {
-  height: auto;
-}
+/*.before-after {*/
+  /*width: 50%;*/
+  /*height: auto;*/
+/*}*/
 
-.carousel {
+.carousel, .before-after {
   padding-top: 1rem;
   width: 80%;
   height: auto;
+}
+
+.gallery-title {
+  align-self: flex-start;
 }
 
 button.slick-arrow {
@@ -16,31 +21,30 @@ button.slick-arrow {
   opacity: 1;
 }
 
-#slick-slide-control00, #slick-slide-control01 {
-  display: none;
-}
-
-.slick-dots li {
-  display: inline-block;
-}
-
 figure {
-  width: 40%;
-  margin: 1rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid blue;
+  /*height: 20rem;*/
 }
 
 figure img {
   display: inline-block;
-  width: 100%;
-  /*height: 10rem;*/
-  margin: 0;
-  /*background-image: url("../images/gallery-images/before-after/20171021_113755-rot.jpg");*/
-  /*background-size: cover;*/
-  /*background-position: center;*/
+  width: auto;
+  padding: 0.25rem;
+  height: 15rem;
+  margin: auto;
+  border: 1px solid red;
+  /*transition: all 300ms;*/
 }
+
+/*figure img:hover {
+  transform: scale(1.5);
+}*/
 
 figcaption {
   font-weight: 600;
   line-height: 1.2;
   padding-top: 0.5rem;
+  text-align: center;
 }
