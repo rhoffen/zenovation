@@ -6,7 +6,7 @@ $(document).ready(function(){
     dots: true,
     arrows: true,
     // variableWidth: true
-    // adaptiveHeight: true
+    adaptiveHeight: true
   });
 
   $('.before-after').slick({
