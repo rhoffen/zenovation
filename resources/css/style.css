@@ -123,6 +123,7 @@ p {
 ul {
   line-height: 1.4;
   list-style: disc inside;
+  padding-bottom: 1rem;
 }
 
 footer {
