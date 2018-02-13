@@ -1,0 +1,13 @@
+
+#thanks-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.thanks-text {
+  position: relative;
+  top: 1.5rem;
+}
