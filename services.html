@@ -7,46 +7,173 @@
       <meta charset="utf-8">
       <link rel="stylesheet" href="./resources/css/reset.css">
       <link rel="stylesheet" href="./resources/css/style.css">
+      <link rel="stylesheet" href="./resources/css/services-style.css">
       <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:400,600,700,800" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="shortcut icon" href="resources\images\pagoda-logo_d200.jpg" type="image/x-icon">
-      <link rel="icon" href="resources\images\pagoda-logo_d200.jpg" type="image/x-icon">
+      <link rel="shortcut icon" href="resources/images/pagoda-logo_d200.jpg" type="image/x-icon">
+      <link rel="icon" href="resources/images/pagoda-logo_d200.jpg" type="image/x-icon">
     </head>
   <body>
     <header>
       <div class="brand-bar">
-        <img src="resources\images\pagoda-logo_d200.jpg" alt="Pagoda logo">
+        <img src="resources/images/pagoda-logo_d200.jpg" alt="Pagoda logo">
         <div class="company-block">
           <h1 id="company-name">Zenovation</h1>
           <h2>General Contractors</h2>
         </div>
       </div>
       <nav>
-        <a href="index.html">Home </a>
-        <a href="services.html" id="current">Services </a>
-        <!-- <a href="testimonials.html">Testimonials </a> -->
-        <!-- <a href="gallery.html">Gallery </a> -->
-        <a href="contact.html">Contact Us </a>
+        <a href="./index.html">Home </a>
+        <a href="./services.html"  id="current">Services </a>
+        <!-- <a href="./testimonials.html">Testimonials </a> -->
+        <!-- <a href="./gallery.html">Gallery </a> -->
+        <a href="./contact.html">Contact Us </a>
       </nav>
     </header>
-    <section>
-      <div class="container" id="service-list">
-        <h1>Services We Offer</h1>
-        <ul>
-          <li>Kitchen remodels</li>
-          <li>Bathroom remodels</li>
-          <li>ADUs - Accessory Dwelling Units</li>
-          <li>Project Management</li>
-          <li>Basement and attic conversions / remodels</li>
-          <li>Whole-house additions and remodels</li>
-          <li>Second-story additions</li>
-          <li>Fences and other outdoor structures</li>
-          <li>Plumbing and electrical upgrades</li>
-          <li>Cabinet-making and wood-working</li>
-          <li>Tile</li>
-        </ul>
-      </div> <!--End 'container' div-->
-    </section>
+    <!--Begin cards  -->
+    <main class="container">
+        <!-- project-manage-card       -->
+        <div class="card">
+          <div class="card-image" style="background-image: url(resources/images/project-manage-card.jpg)"></div>
+          <div class="card-content">
+            <!-- title and content will go here -->
+            <h1>Project Management</h1>
+            <div class="subtitle">
+              On time and on budget
+            </div>
+            <p>We'll handle everything, from the permitting process through final walk-through.  Your project manager will be your single point of contact, so you can focus on the important things.</p>
+            <div class="card-details">
+            <!-- read article, comments, and likes will go here -->
+              <div class="card-details-inner">
+                <div class="read-more">
+                  <a href="#" class="button">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FIR program card -->
+        <div class="card">
+          <div class="card-image" style="background-image: url(resources/images/fir-card.jpg)"></div>
+          <div class="card-content">
+            <!-- title and content will go here -->
+            <h1>FIR Program</h1>
+            <div class="subtitle">
+              Efficient inspections
+            </div>
+            <p>Zenovation is a member of the Field Issuance Remodel (FIR) Program, which streamlines the city inspection process.  </p>
+            <div class="card-details">
+            <!-- read article, comments, and likes will go here -->
+              <div class="card-details-inner">
+                <div class="read-more">
+                  <a href="#" class="button">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Design services card -->
+        <div class="card">
+          <div class="card-image" style="background-image: url(resources/images/design-card.jpg)"></div>
+          <div class="card-content">
+            <!-- title and content will go here -->
+            <h1>Design</h1>
+            <div class="subtitle">
+              Form and function
+            </div>
+            <p>We'll help you design the space that fits your needs with your budget in mind.</p>
+            <div class="card-details">
+            <!-- read article, comments, and likes will go here -->
+              <div class="card-details-inner">
+                <div class="read-more">
+                  <a href="#" class="button">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Custom Woodworking -->
+        <div class="card">
+          <div class="card-image" style="background-image: url(resources/images/woodworking-card.jpg)"></div>
+          <div class="card-content">
+            <!-- title and content will go here -->
+            <h1>Custom Woodworking</h1>
+            <div class="subtitle">
+              All in the Details
+            </div>
+            <p>Our carpenters can make custom furniture, finishes and built-ins that will make your home unique.</p>
+            <div class="card-details">
+            <!-- read article, comments, and likes will go here -->
+              <div class="card-details-inner">
+                <div class="read-more">
+                  <a href="#" class="button">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Full-service card -->
+        <div class="card">
+          <div class="card-image" style="background-image: url(resources/images/full-service-card.jpg)"></div>
+          <div class="card-content">
+            <!-- title and content will go here -->
+            <h1>Full-Service Home Remodeling</h1>
+            <div class="subtitle">
+              Every room beautiful
+            </div>
+            <p>When it's time to upgrade your home for your own enjoyment, to increase resale value or to deal with structural or safety issues, you can depend on us to help you get best your budget allows.</p>
+            <div class="card-details">
+            <!-- read article, comments, and likes will go here -->
+              <div class="card-details-inner">
+                <div class="read-more">
+                  <a href="#" class="button">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ADUs card -->
+        <div class="card">
+          <div class="card-image" style="background-image: url(resources/images/adu-card.jpg)"></div>
+          <div class="card-content">
+            <!-- title and content will go here -->
+            <h1>ADUs</h1>
+            <div class="subtitle">
+              Generate income
+            </div>
+            <p>Have some extra space and don't mind sharing?  We can build an accessory dwelling unit (ADU) on your property or help you convert a basement or attic space.  City regulations can seem daunting, but our experience will help you navigate the process smoothly.</p>
+            <div class="card-details">
+            <!-- read article, comments, and likes will go here -->
+              <div class="card-details-inner">
+                <div class="read-more">
+                  <a href="#" class="button">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Trades card -->
+        <div class="card">
+          <div class="card-image" style="background-image: url(resources/images/trades-card.jpg)"></div>
+          <div class="card-content">
+            <!-- title and content will go here -->
+            <h1>Trades</h1>
+            <div class="subtitle">
+              Making it work
+            </div>
+            <p>We have relationships with expert tradespeople - plumbers, electricians, HVAC technicians, and more - who will make sure your home's systems, appliances and fixtures are installed correctly and up to code for safety and proper function.  When installed by professionals, the work is waranteed.</p>
+            <div class="card-details">
+            <!-- read article, comments, and likes will go here -->
+              <div class="card-details-inner">
+                <div class="read-more">
+                  <a href="#" class="button">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <!--Begin Footer-->
     <footer>
       <div class="container">
         <address>
