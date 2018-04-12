@@ -1,0 +1,65 @@
+/*row 1*/
+#kitchen-1 {
+  grid-column: 1 / span 4;
+  grid-row: 1 / 2;
+}
+
+#live-edge {
+  grid-column: 5 / span 2;
+  grid-row: 1 / 2;
+}
+
+.row-1 img {
+  height: 83.3%;
+}
+
+/*row 2*/
+#chimney-niche {
+  grid-column: 1 / span 2;
+  grid-row: 2 / 3;
+}
+
+#kitchen-1-2 {
+   grid-column: 3 / span 4;
+   grid-row: 2 / 3;
+ }
+
+/*row 3*/
+#kitchen-2-1 {
+  grid-column: 1 / span 2;
+  grid-row: 3 / 4;
+}
+
+#kitchen-3 {
+  grid-column: 3 / span 2;
+  grid-row: 3 / 4;
+}
+
+#kitchen-4 {
+  grid-column: 5 / span 2;
+  grid-row: 3 / 4;
+}
+
+.row-2 {
+  width: 17.5rem;
+}
+
+.row-2 img{
+    height: 83.3%;
+}
+
+/*row 4*/
+/*#vanity-master {
+  grid-column: 1 / span 2;
+  grid-row: 4 / 5;
+}
+
+#upstairs-bathroom {
+  grid-column: 3 / span 2;
+  grid-row: 3 / 4;
+}
+
+#toilet {
+  grid-column: 5 / span 2;
+  grid-row: 4 / 5;
+}*/

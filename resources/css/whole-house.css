@@ -1,0 +1,125 @@
+main {
+  background: linear-gradient(to right, #024f72, #012C40, #024f72);
+}
+
+.container {
+  margin: auto;
+}
+
+.woodworking-title {
+  color: #e6eff2;
+  text-align: center;
+}
+
+h1.woodworking-title {
+  padding-top: 1.5rem;
+}
+
+h2.woodworking-title {
+  padding-bottom: 2.4rem;
+}
+
+.whole-house-gallery {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 37.5rem 37.5rem 37.5rem 37.5rem 1fr;
+  grid-gap: 4rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: start;
+  grid-flow: row;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 6px 6px 15px rgba(230, 239, 242, 0.1),
+              -6px -6px 15px rgba(230, 239, 242, 0.1);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+figcaption {
+  padding: 1rem;
+  padding-bottom: 1.6rem;
+  color: #e6eff2;
+  line-height: 1.4;
+}
+
+/*row 1*/
+#shower-1 {
+  grid-column: 1 / span 4;
+  grid-row: 1 / 2;
+}
+
+#shower-1-vanity {
+  grid-column: 5 / span 2;
+  grid-row: 1 / 2;
+}
+
+.row-1 img {
+  height: 83.3%;
+}
+
+/*row 2*/
+#vanity-w-mirror {
+  grid-column: 1 / span 2;
+  grid-row: 2 / 3;
+}
+
+#tile-surround {
+   grid-column: 3 / span 2;
+   grid-row: 2 / 3;
+ }
+
+#shelves-mirror {
+  grid-column: 5 / span 2;
+  grid-row: 2 / 3;
+}
+
+/*row 3*/
+
+#window {
+  grid-column: 1 / span 2;
+  grid-row: 3 / 4;
+}
+
+#basement-bath-addition {
+  grid-column: 3 / span 2;
+  grid-row: 4 / 6;
+  height: 89.5% !important;
+}
+
+#walk-in-shower {
+  grid-column: 5 / span 2;
+  grid-row: 3 / 4;
+}
+
+.row-2 {
+  width: 17.5rem;
+}
+
+.row-2 img{
+    height: 83.3%;
+}
+
+/*row 4*/
+#vanity-master {
+  grid-column: 1 / span 2;
+  grid-row: 4 / 5;
+}
+
+#upstairs-bathroom {
+  grid-column: 3 / span 2;
+  grid-row: 3 / 4;
+}
+
+#toilet {
+  grid-column: 5 / span 2;
+  grid-row: 4 / 5;
+}
