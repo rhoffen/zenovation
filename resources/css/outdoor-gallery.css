@@ -1,24 +1,7 @@
-.outdoor-gallery {
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 37.5rem 37.5rem 37.5rem 37.5rem 37.5rem;
-  grid-gap: 4rem;
-  justify-content: center;
-  justify-items: center;
-  align-items: start;
-  grid-flow: row;
-  padding-bottom: 4rem;
-}
-
 /*row 1*/
 #pergola-1 {
   grid-column: 1 / span 6;
   grid-row: 1 / 2;
-}
-
-.row-1 img {
-  height: 83.3%;
 }
 
 /*row 2*/

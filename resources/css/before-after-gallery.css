@@ -1,48 +1,43 @@
-.before-after-gallery {
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr, 1fr;
-  grid-template-rows: 30% 20% 20% 1fr;
+.before-after {
+  grid-template-columns:auto;
+  grid-template-rows: 33.5rem auto;
   grid-gap: 3rem;
-  justify-content: center;
-  justify-items: center;
-  align-items: start;
-  grid-flow: row;
 }
 
 /*row 1*/
 #living-room-before {
-  grid-column: 1 / span 1;
+  grid-column: 1 / span 3;
   grid-row: 1 / 2;
 }
 
 #living-room-after {
-  grid-column: 2 / span 1;
+  grid-column: 4 / span 3;
   grid-row: 1 / 2;
 }
 
-.cap-pad figcaption {
-  padding-bottom: 3rem;
+.cap-pad img {
+  height: 77.5%;
 }
 
 /*row 2*/
 #kitchen-south-before {
-  grid-column: 1 / 2;
+  grid-column: 1 / span 3;
   grid-row: 2 / 3;
 }
 
 #kitchen-south-after {
-  grid-column: 2 / 3;
+  grid-column: 4 / span 3;
   grid-row: 2 / 3;
 }
 
+
 /*row 3*/
 #tub-before {
-  grid-column: 1 / 2;
+  grid-column: 1 / span 3;
   grid-row: 3 / 4;
 }
 
 #tub-after {
-  grid-column: 2 / 3;
+  grid-column: 4 / span 3;
   grid-row: 3 / 4;
 }

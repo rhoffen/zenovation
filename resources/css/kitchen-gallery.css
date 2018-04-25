@@ -9,10 +9,6 @@
   grid-row: 1 / 2;
 }
 
-.row-1 img {
-  height: 83.3%;
-}
-
 /*row 2*/
 #chimney-niche {
   grid-column: 1 / span 2;
@@ -39,27 +35,3 @@
   grid-column: 5 / span 2;
   grid-row: 3 / 4;
 }
-
-.row-2 {
-  width: 17.5rem;
-}
-
-.row-2 img{
-    height: 83.3%;
-}
-
-/*row 4*/
-/*#vanity-master {
-  grid-column: 1 / span 2;
-  grid-row: 4 / 5;
-}
-
-#upstairs-bathroom {
-  grid-column: 3 / span 2;
-  grid-row: 3 / 4;
-}
-
-#toilet {
-  grid-column: 5 / span 2;
-  grid-row: 4 / 5;
-}*/
