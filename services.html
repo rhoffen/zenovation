@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="./resources/css/reset.css">
       <link rel="stylesheet" href="./resources/css/style.css">
       <link rel="stylesheet" href="./resources/css/services-style.css">
+      <link rel="stylesheet" href="./resources/css/mobile-sub-page.css">
       <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:400,600,700,800" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="shortcut icon" href="resources/images/pagoda-logo_d200.jpg" type="image/x-icon">
@@ -16,10 +17,10 @@
   <body>
     <header>
       <div class="brand-bar">
-        <img src="resources/images/pagoda-logo_d200.jpg" alt="Pagoda logo">
+        <img class="desktop" src="resources/images/pagoda-logo_d200.jpg" alt="Pagoda logo">
         <div class="company-block">
           <h1 id="company-name">Zenovation</h1>
-          <h2>General Contractors</h2>
+          <h2 class="desktop">General Contractors</h2>
         </div>
       </div>
       <nav>
@@ -35,42 +36,50 @@
               <a href="./before-after-gallery.html">Before-After</a>
             </div>
         </div>
-        <a href="./contact.html">Contact Us </a>
+        <a class="desktop" href="./contact.html">Contact Us </a>
+        <a class="mobile" href="./contact.html">Contact</a>
       </nav>
     </header>
     <!--Begin cards  -->
     <main class="container">
+      <h2 class="mobile">Services</h2>
+
       <!-- Full-service card -->
       <div class="card">
         <div class="card-image" style="background-image: url(resources/images/full-service-card.jpg)">
         </div>
         <div class="card-content">
-          <h1>Full-Service Home Remodeling</h1>
-          <div class="subtitle">
-            Every room beautiful
-          </div>
-          <p>When it's time to upgrade your home for your own enjoyment, to increase resale value or to deal with structural or safety issues, our team of experienced builders can help make your vision a reality.</p>
-          <div class="card-details">
-            <div class="card-details-inner">
-              <div class="dropdown">
-                <div class="button">Project Galleries</div>
-                  <div class="dropdown-content">
-                    <a href="./bathroom-gallery.html">Bathrooms</a>
-                    <a href="./kitchen-gallery.html">Kitchens</a>
-                    <a href="./woodworking-gallery.html">Woodworking</a>
-                    <a href="./outdoor-gallery.html">Outdoor</a>
-                    <a href="./before-after-gallery.html">Before-After</a>
+          <h1 class="accordion">Full-Service Home Remodeling</h1>
+          <div class="panel">
+            <div class="subtitle">
+              Every room beautiful
+            </div>
+            <p>When it's time to upgrade your home for your own enjoyment, to increase resale value or to deal with structural or safety issues, our team of experienced builders can help make your vision a reality.</p>
+            <div class="card-details">
+              <div class="card-details-inner">
+                <div class="dropdown">
+                  <div class="button">Project Galleries</div>
+                    <div class="dropdown-content">
+                      <a href="./bathroom-gallery.html">Bathrooms</a>
+                      <a href="./kitchen-gallery.html">Kitchens</a>
+                      <a href="./woodworking-gallery.html">Woodworking</a>
+                      <a href="./outdoor-gallery.html">Outdoor</a>
+                      <a href="./before-after-gallery.html">Before-After</a>
+                    </div>
                   </div>
+                </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
       <!-- Custom Woodworking -->
       <div class="card">
         <div class="card-image" style="background-image: url(resources/images/woodworking-card.jpg)"></div>
         <div class="card-content">
-          <h1>Custom Woodworking</h1>
+          <h1 class="accordion">Custom Woodworking</h1>
+          <div class="panel">
+
+
           <div class="subtitle">
             All in the Details
           </div>
@@ -83,34 +92,46 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
       <!-- ADUs card -->
       <div class="card">
         <div class="card-image" style="background-image: url(resources/images/adu-card.jpg)"></div>
         <div class="card-content">
-          <h1>ADUs / AirBnB</h1>
+          <h1 class="accordion">ADUs / AirBnB</h1>
+          <div class="panel">
+
+
           <div class="subtitle">
             Generate income
           </div>
           <p>Have some extra space and don't mind sharing?  We can build an accessory dwelling unit (ADU) on your property or help you convert a basement or attic space.  City regulations can seem daunting, but our experience will help you navigate the process smoothly.</p>
+        </div>
         </div>
       </div>
         <!-- project-manage-card-->
         <div class="card">
           <div class="card-image" style="background-image: url(resources/images/project-manage-card.jpg)"></div>
           <div class="card-content">
-            <h1>Project Management</h1>
+            <h1 class="accordion">Project Management</h1>
+            <div class="panel">
+
+
             <div class="subtitle">
               Simplifying the process
             </div>
             <p>We'll handle everything, from the permitting process through final walk-through.  Your project manager will be your single point of contact, so you can focus on the important things.</p>
+          </div>
           </div>
         </div>
         <!-- FIR program card -->
         <div class="card">
           <div class="card-image" style="background-image: url(resources/images/fir-card.jpg)"></div>
           <div class="card-content">
-            <h1>FIR Program</h1>
+            <h1 class="accordion">FIR Program</h1>
+            <div class="panel">
+
+
             <div class="subtitle">
               Efficient inspections
             </div>
@@ -122,17 +143,22 @@
                 </div>
               </div>
             </div>
+            </div>
           </div>
         </div>
         <!-- Trades card -->
         <div class="card" id="penult-card">
           <div class="card-image" style="background-image: url(resources/images/trades-card.jpg)"></div>
           <div class="card-content">
-            <h1>Plumbing, Electrical &amp HVAC</h1>
+            <h1 class="accordion">Plumbing, Electrical &amp HVAC</h1>
+            <div class="panel">
+
+
             <div class="subtitle">
               Making it work
             </div>
             <p>Our team of tradespeople will make sure your home's systems, appliances and fixtures are installed correctly and up to code for safety and proper function.  We can help you with lighting design, energy efficiency and specialty heating and cooling.</p>
+          </div>
           </div>
         </div>
     </main>
@@ -189,5 +215,7 @@ while(x=eval(x));
         </div>
       </div> <!--End footer container-->
     </footer>
+    <script src="./resources/javascript/accordion.js"></script>
+
   </body>
 </html>

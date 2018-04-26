@@ -67,8 +67,13 @@ header img {
 
 /*Navigation menu*/
 nav a {
+  color: inherit;
   display: inline-block;
   padding: 2rem 3rem;
+}
+
+p a {
+  color: inherit;
 }
 
 /*Set all links to change color on hover*/
@@ -77,6 +82,7 @@ a {
 }
 
 a:hover,
+a.mobile:hover,
 .dropbtn:hover,
 .dropdown-content a:hover {
   color: #ff404c;
@@ -148,7 +154,7 @@ section {
   overflow: hidden;
 }
 
-.mission {
+#mission {
   width: 50%;
   padding-right: 2rem;
   padding-top: 2rem;
@@ -218,6 +224,11 @@ footer span {
     display: block;
   }
 
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
   header,
   .brand-bar,
   nav {
@@ -237,9 +248,14 @@ footer span {
     font-size: 4rem;
   }
 
+  h2,
   header h2,
   #tagline {
     font-size: 1.75rem;
+  }
+
+  h2.mobile {
+    margin-bottom: 1rem;
   }
 
   nav a,
@@ -274,12 +290,12 @@ footer span {
   #tagline {
     margin: auto;
     text-align: center;
+    padding-top: 0;
   }
 
   #home {
     height: auto;
     padding: 0;
-    /*padding-bottom: 0.5rem;*/
   }
 
   .featured-img {
@@ -298,4 +314,16 @@ footer span {
     text-align: center;
   }
 
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
 }

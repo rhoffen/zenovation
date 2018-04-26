@@ -1,0 +1,24 @@
+/*On sub-pages of the mobile version, the nav bar will display below the company logo in a horizontal bar.*/
+
+@media screen and (max-width: 480px) {
+
+  header nav {
+    display: flex;
+    flex-grow: 1;
+    border-bottom: 1px solid #1ca5b8;
+    margin-bottom: 1rem;
+  }
+
+  nav a,
+  .dropdown,
+  nav a.mobile {
+    display: inline-block;
+    color: #012C40;
+    background-color: #e6eff2;
+  }
+
+/*The current page link will not be displayed*/
+  #current {
+    display: none;
+  }
+}
