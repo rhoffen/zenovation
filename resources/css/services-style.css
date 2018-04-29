@@ -94,7 +94,7 @@ main {
   .card {
     width: 90%;
   }
-  
+
   .card-image {
     height: 100px;
   }
@@ -119,16 +119,13 @@ main {
     height: auto;
   }
 
-  .dropdown {
+  .button {
     position: relative;
   }
 
   .dropdown-content {
-    position: absolute;
-    z-index: 500;
-  }
+    position: relative;
 
   }
-
 
 }
