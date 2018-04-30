@@ -102,7 +102,7 @@ figcaption {
 }
 
 #coffee-table-2 img {
-  height: 369.75px;
+  /*height: 369.75px;*/
 }
 
 /*Row 3*/
@@ -135,7 +135,7 @@ figcaption {
 }
 
 .vert-img img {
-  max-height: 90%;
+  height: 90%;
 }
 
 .square-img img {
@@ -168,6 +168,10 @@ figcaption {
   #coffee-table-2-detail {
     grid-column: 1 / 2;
     grid-row: auto;
+  }
+
+  #coffee-table-2-detail {
+    grid-row: 7 / 8;
   }
 
   img,

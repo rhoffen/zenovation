@@ -18,7 +18,8 @@
   }
 
 /*The current page link will not be displayed*/
-  #current {
+  #current,
+  #bef-aft-link {
     display: none;
   }
 
