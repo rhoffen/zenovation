@@ -1,13 +1,8 @@
-main {
-  background: linear-gradient(to right, #024f72, #012C40, #024f72);
-}
-
 .container {
   margin: auto;
 }
 
 .gallery-title {
-  color: #e6eff2;
   text-align: center;
 }
 
@@ -36,8 +31,8 @@ figure {
   display: flex;
   flex-direction: column;
   height: 100% !important;
-  box-shadow: 6px 6px 15px rgba(230, 239, 242, 0.1),
-              -6px -6px 15px rgba(230, 239, 242, 0.1);
+  box-shadow: 6px 6px 15px rgba(1, 44, 64, 0.2),
+              -6px -6px 15px rgba(1, 44, 64, 0.2);
 }
 
 figure img {
@@ -49,7 +44,6 @@ figure img {
 figcaption {
   padding: 1rem;
   padding-bottom: 2rem;
-  color: #e6eff2;
   line-height: 1.4;
 }
 
@@ -119,4 +113,56 @@ figcaption {
 #toilet {
   grid-column: 5 / span 2;
   grid-row: 4 / 5;
+}
+
+@media screen and (max-width: 480px) {
+  #bef-aft-link {
+    display: none;
+  }
+
+  .whole-house-gallery {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 0;
+    width: 100%;
+  }
+
+  .whole-house-gallery.container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  figure img,
+  .long-cap-row img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  figcaption,
+  .long-cap-row figcaption {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 2.5rem;
+  }
+
+  #shower-1-vanity,
+  #shelves-mirror,
+  #window,
+  #toilet {
+    display: none;
+  }
+
+  #shower-1,
+  #vanity-w-mirror,
+  #tile-surround,
+  #upstairs-bathroom,
+  #walk-in-shower,
+  #vanity-master,
+  #basement-bath-addition {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
 }

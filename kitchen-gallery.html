@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./resources/css/style.css">
   <link rel="stylesheet" href="./resources/css/whole-house.css">
   <link rel="stylesheet" href="./resources/css/kitchen-gallery.css">
+  <link rel="stylesheet" href="./resources/css/mobile-sub-page.css">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:400,600,700,800" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="resources/images/pagoda-logo_d200.jpg" type="image/x-icon">
@@ -16,31 +17,32 @@
   <body>
     <header>
       <div class="brand-bar">
-        <img src="resources/images/pagoda-logo_d200.jpg" alt="Pagoda logo">
+        <img class="desktop" src="resources/images/pagoda-logo_d200.jpg" alt="Pagoda logo">
         <div class="company-block">
           <h1 id="company-name">Zenovation</h1>
-          <h2>General Contractors</h2>
+          <h2 class="desktop">General Contractors</h2>
         </div>
       </div>
       <nav>
         <a href="./index.html">Home </a>
         <a href="./services.html">Services </a>
         <div class="dropdown">
-          <div class="dropbtn" id="current">Galleries</div>
-            <div class="dropdown-content">
+          <div class="desktop dropbtn" id="current">Galleries</div>
+          <div class="mobile dropbtn">Galleries</div>            <div class="dropdown-content">
               <a href="./bathroom-gallery.html">Bathrooms</a>
               <a href="./kitchen-gallery.html" id="current">Kitchens</a>
               <a href="./woodworking-gallery.html">Woodworking</a>
               <a href="./outdoor-gallery.html">Outdoor</a>
-              <a href="./before-after-gallery.html">Before-After</a>
+              <a href="./before-after-gallery.html" id="bef-aft-link">Before-After</a>
             </div>
         </div>
         <a href="./contact.html">Contact Us </a>
       </nav>
     </header>
     <main>
-      <h1 class="gallery-title">Interior Projects - Kitchens</h1>
-      <h2 class="gallery-title">A sampling of kitchen remodeling projects Zenovation has completed.  </h2>
+      <h1 class="desktop gallery-title">Interior Projects - Kitchens</h1>
+      <h2 class="desktop gallery-title">A sampling of kitchen remodeling projects Zenovation has completed.  </h2>
+      <h1 class="mobile gallery-title">Kitchen Gallery</h1>
       <div class="whole-house-gallery container">
         <!-- Row 1 images - long caption row-->
         <figure class="long-cap-row" id="kitchen-1">
@@ -69,7 +71,7 @@
           <img src="resources/images/whole-house-images/kitchen-3.jpg" alt="">
           <figcaption>Remodel with granite countertops, custom cabinets and maple floors.</figcaption>
         </figure>
-s      </div>
+      </div>
     </main>
     <footer>
       <div class="container">

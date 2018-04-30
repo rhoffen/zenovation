@@ -6,7 +6,9 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="./resources/css/reset.css">
   <link rel="stylesheet" href="./resources/css/style.css">
+  <link rel="stylesheet" href="./resources/css/whole-house.css">
   <link rel="stylesheet" href="./resources/css/woodworking.css">
+  <link rel="stylesheet" href="./resources/css/mobile-sub-page.css">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:400,600,700,800" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="resources/images/pagoda-logo_d200.jpg" type="image/x-icon">
@@ -15,31 +17,34 @@
   <body>
     <header>
       <div class="brand-bar">
-        <img src="resources/images/pagoda-logo_d200.jpg" alt="Pagoda logo">
+        <img class="desktop" src="resources/images/pagoda-logo_d200.jpg" alt="Pagoda logo">
         <div class="company-block">
           <h1 id="company-name">Zenovation</h1>
-          <h2>General Contractors</h2>
+          <h2 class="desktop">General Contractors</h2>
         </div>
       </div>
       <nav>
         <a href="./index.html">Home </a>
         <a href="./services.html">Services </a>
         <div class="dropdown">
-          <div class="dropbtn" id="current">Galleries</div>
+          <div class="desktop dropbtn" id="current">Galleries</div>
+          <div class="mobile dropbtn">Galleries</div>
             <div class="dropdown-content">
               <a href="./bathroom-gallery.html">Bathrooms</a>
               <a href="./kitchen-gallery.html">Kitchens</a>
               <a href="./woodworking-gallery.html" id="current">Woodworking</a>
               <a href="./outdoor-gallery.html">Outdoor</a>
-              <a href="./before-after-gallery.html">Before-After</a>
+              <a href="./before-after-gallery.html" id="bef-aft-link">Before-After</a>
             </div>
         </div>
-        <a href="./contact.html">Contact Us </a>
+        <a href="./contact.html" class="desktop">Contact Us </a>
+        <a href="./contact.html" class="mobile">Contact</a>
       </nav>
     </header>
     <main>
-      <h1 class="woodworking-title">Woodworking Projects</h1>
-      <h2 class="woodworking-title">Items shown were designed, constructed and installed by Zenovation carpenters</h2>
+      <h1 class="desktop woodworking-title">Woodworking Projects</h1>
+      <h1 class="mobile woodworking-title">Woodworking Gallery</h1>
+      <h2 class="desktop woodworking-title">Items shown were designed, constructed and installed by Zenovation carpenters</h2>
       <div class="woodworking-gallery container">
 
         <figure id="bookcase">

@@ -35,3 +35,16 @@
   grid-column: 5 / span 2;
   grid-row: 3 / 4;
 }
+
+@media screen and (max-width: 480px) {
+  #kitchen-1,
+  #live-edge,
+  #chimney-niche,
+  #kitchen-1-2,
+  #kitchen-2-1,
+  #kitchen-3,
+  #kitchen-4 {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
+}

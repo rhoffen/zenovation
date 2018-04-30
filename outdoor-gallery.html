@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./resources/css/style.css">
   <link rel="stylesheet" href="./resources/css/whole-house.css">
   <link rel="stylesheet" href="./resources/css/outdoor-gallery.css">
+  <link rel="stylesheet" href="./resources/css/mobile-sub-page.css">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:400,600,700,800" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="resources/images/pagoda-logo_d200.jpg" type="image/x-icon">
@@ -16,10 +17,10 @@
   <body>
     <header>
       <div class="brand-bar">
-        <img src="resources/images/pagoda-logo_d200.jpg" alt="Pagoda logo">
+        <img class="desktop" src="resources/images/pagoda-logo_d200.jpg" alt="Pagoda logo">
         <div class="company-block">
           <h1 id="company-name">Zenovation</h1>
-          <h2>General Contractors</h2>
+          <h2 class="desktop">General Contractors</h2>
         </div>
       </div>
       <nav>
@@ -27,20 +28,22 @@
         <a href="./services.html">Services </a>
         <div class="dropdown">
           <div class="dropbtn" id="current">Galleries</div>
+          <div class="mobile dropbtn">Galleries</div>
             <div class="dropdown-content">
               <a href="./bathroom-gallery.html">Bathrooms</a>
               <a href="./kitchen-gallery.html">Kitchens</a>
               <a href="./woodworking-gallery.html">Woodworking</a>
               <a href="./outdoor-gallery.html" id="current">Outdoor</a>
-              <a href="./before-after-gallery.html">Before-After</a>
+              <a href="./before-after-gallery.html" id="bef-aft-link">Before-After</a>
             </div>
         </div>
-        <a href="./contact.html">Contact Us </a>
-      </nav>
+        <a class="desktop" href="./contact.html">Contact Us </a>
+        <a class="mobile" href="./contact.html">Contact</a>      </nav>
     </header>
     <main>
-      <h1 class="gallery-title">Outdoor Projects</h1>
-      <h2 class="gallery-title">We love working outdoors!</h2>
+      <h1 class="desktop gallery-title">Outdoor Projects</h1>
+      <h1 class="mobile gallery-title">Outdoor Gallery</h1>
+      <h2 class="desktop gallery-title">We love working outdoors!</h2>
       <div class="whole-house-gallery container">
         <!-- Row 1 images -->
         <figure id="pergola-1">

@@ -7,7 +7,17 @@
   align-items: center;
 }
 
-.thanks-text {
-  position: relative;
-  top: 1.5rem;
+.container {
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+  padding-top: 2rem;
+}
+
+
+@media screen and (max-width: 480px) {
+  h1 {
+    text-align: center;
+    margin: 0 1rem;
+  }
 }
