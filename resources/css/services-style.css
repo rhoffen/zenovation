@@ -2,9 +2,9 @@ h1, h2 {
   font-weight: 700;
 }
 
-main {
+.container {
   margin: auto;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
 }
 
@@ -85,6 +85,24 @@ main {
   font-weight: 700;
 }
 
+@media screen and (max-width: 970px) {
+
+  /*Allow container to shrink*/
+  main.container {
+    width: auto;
+  }
+
+  /*Allow no more than two cards per line*/
+  .card {
+    flex: 1 1 calc(45% - 1.5rem);
+  }
+
+  .no-button-row .card-content {
+    padding-bottom: 2rem;
+  }
+
+}
+
 @media screen and (max-width: 480px) {
   .container {
     flex-direction: column;
@@ -118,6 +136,7 @@ main {
     padding-bottom: 1rem;
     height: auto;
     line-height: 1.4;
+    text-decoration: underline;
   }
 
   .button {

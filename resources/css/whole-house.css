@@ -115,6 +115,74 @@ figcaption {
   grid-row: 4 / 5;
 }
 
+@media screen and (max-width: 970px){
+
+  .whole-house-gallery.container {
+    width: 90%;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
+
+  .whole-house-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: auto;
+    grid-gap: 2rem;
+    width: 100%;
+  }
+
+  .long-cap-row img {
+    height: 83.3%;
+  }
+  
+  /*row 1*/
+  #shower-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  #shower-1-vanity,
+  #shelves-mirror,
+  #window,
+  #toilet {
+    display: none;
+  }
+
+  /*row 2*/
+  #tile-surround {
+     grid-column: 1 / 2;
+     grid-row: 2 / 3;
+   }
+
+  #vanity-w-mirror {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  /*row 3*/
+  #upstairs-bathroom {
+     grid-column: 1 / 2;
+     grid-row: 3 / 4;
+   }
+
+  #walk-in-shower {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  /*row 4*/
+  #vanity-master {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  #basement-bath-addition {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+
+}
+
 @media screen and (max-width: 480px) {
   #bef-aft-link {
     display: none;

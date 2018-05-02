@@ -86,7 +86,29 @@ input[type=submit]:hover, input[type=reset]:hover {
   color: #e6eff2;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 970px) {
+  #contact-section .container,
+  #contact-form .container {
+    width: 100%;
+    /*margin: auto;*/
+  }
+
+  #contact-section .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #company-contact p {
+    text-align: center;
+  }
+
+  #contact-section .container{
+    max-width: 650px;
+  }
+
+}
+
+@media screen and (max-width: 666px) {
   .text-fields,
   .container {
     flex-direction: column;
@@ -101,6 +123,13 @@ input[type=submit]:hover, input[type=reset]:hover {
     align-self: center;
     text-align: center;
     margin-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+
+  #contact-fields {
+    padding-right: 0;
   }
 
   #project-field {
@@ -117,5 +146,26 @@ input[type=submit]:hover, input[type=reset]:hover {
 
   #contactform {
     margin-bottom: 0;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    padding: 0;
+  }
+
+  .zen-info,
+  .wbr-info
+  #rights {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dropdown-content a {
+    text-align: left;
+    padding-left: 0.5rem
   }
 }

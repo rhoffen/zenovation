@@ -95,7 +95,7 @@
         </div>
       </div>
       <!-- ADUs card -->
-      <div class="card">
+      <div class="no-button-row card">
         <div class="card-image" style="background-image: url(resources/images/adu-card.jpg)"></div>
         <div class="card-content">
           <h1 class="accordion">ADUs / AirBnB</h1>
@@ -110,7 +110,7 @@
         </div>
       </div>
         <!-- project-manage-card-->
-        <div class="card">
+        <div class="no-button-row card">
           <div class="card-image" style="background-image: url(resources/images/project-manage-card.jpg)"></div>
           <div class="card-content">
             <h1 class="accordion">Project Management</h1>
@@ -165,23 +165,22 @@
     <!--Begin Footer-->
     <footer>
       <div class="container">
-        <address>
-          <span><!-- script for email address masking -->
+        <div class="zen-info">
+          <span id="zen-mail">
+            <!-- script for email address masking -->
             <script src="./resources/javascript/zenmailmask.js" type="text/javascript"></script>
           </span>
-        </address>
-        <div class="footer-info">
-          <span>CCB#207983</span>
-          <span class="desktop">
+          <span id="ccb">CCB#207983</span>
+        </div>
+        <div class="wbr-info">
+          <span id="wbr-mail"><span>
             <!-- Script for Website by Rebecca email mask -->
             <script src="./resources/javascript/websitemailmask.js" type="text/javascript"></script>
-            , &copy 2018, All rights reserved.
-          </span>
+            , &copy 2018</span>
+          <span id="rights">All rights reserved.</span>
         </div>
-        <span class="mobile"><script src="./resources/javascript/websitemailmask.js" type="text/javascript"></script></span>
-        <span class="mobile">&copy 2018  &nbsp All rights reserved
-        </span>
-      </div> <!--End footer container-->
+      </div>
+      <!--End footer container-->
     </footer>
     <script src="./resources/javascript/accordion.js"></script>
 

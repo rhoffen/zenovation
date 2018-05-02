@@ -1,23 +1,21 @@
-
-#thanks-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  align-items: center;
-}
-
-.container {
+section .container {
   flex-direction: column;
-  /*justify-content: center;*/
   align-items: center;
   padding-top: 2rem;
 }
 
 
 @media screen and (max-width: 480px) {
-  h1 {
+  section .container {
+    padding-top: 0;
+  }
+
+  section .container h1 {
     text-align: center;
     margin: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
+
+
 }
