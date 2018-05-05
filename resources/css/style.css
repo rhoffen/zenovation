@@ -228,6 +228,10 @@ footer span {
 
 
 @media screen and (max-width: 970px) {
+
+  #home.container {
+  }
+
   #mission {
     padding-left: 1.5rem;
   }
@@ -375,8 +379,4 @@ footer span {
     display: none;
     overflow: hidden;
   }
-}
-
-@media screen and (max-width: 352px) {
-
 }

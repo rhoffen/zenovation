@@ -25,11 +25,9 @@ h1, h2 {
 }
 
 #company-contact p {
-  margin-top: 1.5rem;
-  align-self: flex-start;
-  margin-bottom: -1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  font-style: italic;
 }
 
 #contactform {
@@ -90,7 +88,6 @@ input[type=submit]:hover, input[type=reset]:hover {
   #contact-section .container,
   #contact-form .container {
     width: 100%;
-    /*margin: auto;*/
   }
 
   #contact-section .container {
@@ -115,16 +112,18 @@ input[type=submit]:hover, input[type=reset]:hover {
   }
 
   h2.mobile {
+    margin-top: 1.25rem;
     text-align: center;
   }
 
   #company-contact p {
-    margin-top: 1rem;
+    margin-top: 0;
     align-self: center;
     text-align: center;
     margin-bottom: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
+    font-style: italic;
   }
 
 

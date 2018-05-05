@@ -105,12 +105,7 @@ figcaption {
   grid-row: 2 / 3;
 }
 
-#coffee-table-2 img {
-  /*height: 369.75px;*/
-}
-
 /*Row 3*/
-
 #coffee-table-1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;

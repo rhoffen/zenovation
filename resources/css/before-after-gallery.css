@@ -1,22 +1,18 @@
 .before-after {
   grid-template-columns:auto;
-  grid-template-rows: 33.5rem auto;
+  grid-template-rows: auto;
   grid-gap: 3rem;
 }
 
 /*row 1*/
-#living-room-before {
+#kitchen-north-before {
   grid-column: 1 / span 3;
   grid-row: 1 / 2;
 }
 
-#living-room-after {
+#kitchen-north-after {
   grid-column: 4 / span 3;
   grid-row: 1 / 2;
-}
-
-.cap-pad img {
-  height: 77.5%;
 }
 
 /*row 2*/
@@ -30,14 +26,32 @@
   grid-row: 2 / 3;
 }
 
-
 /*row 3*/
-#tub-before {
+#living-room-before {
   grid-column: 1 / span 3;
   grid-row: 3 / 4;
 }
 
-#tub-after {
+#living-room-after {
   grid-column: 4 / span 3;
   grid-row: 3 / 4;
+}
+
+.cap-pad img {
+  height: 77.5%;
+}
+
+.short-cap {
+  display: none;
+}
+
+@media screen and (max-width: 970px) {
+
+  .short-cap {
+    display: block;
+  }
+
+  .extra-long-cap {
+    display: none;
+  }
 }
