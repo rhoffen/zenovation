@@ -216,6 +216,11 @@ footer .container {
   flex-direction: column;
 }
 
+#wbr-mail {
+  text-decoration: underline;
+}
+
+
 footer span {
   display: block;
   line-height: 1.5;
@@ -362,7 +367,8 @@ footer span {
   }
 
   .zen-info,
-  .wbr-info
+  .wbr-info,
+  #wbr-mail,
   #rights {
     text-align: center;
   }
