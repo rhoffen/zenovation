@@ -100,7 +100,7 @@ a.mobile:hover,
 }
 
 /* Style The Dropdown Button for Galleries*/
-.dropbtn {
+.dropbtn a {
     padding: 2rem 3rem;
 }
 
