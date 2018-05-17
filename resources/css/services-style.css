@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1, h2 {
   font-weight: 700;
 }
@@ -148,3 +149,159 @@ h1, h2 {
   }
 
 }
+=======
+h1, h2 {
+  font-weight: 700;
+}
+
+.container {
+  margin: auto;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/*Make cards take 1/3 of screen container width for desktop but responsive for smaller screens*/
+.card {
+  flex: 1 1 calc(33% - 1.5rem);
+  margin: 0.5rem;
+  position: relative;
+  border: 1px solid  #efefef;
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+  transition: all .3s ease;
+}
+
+.card-image {
+  padding: 0 1rem;
+  height: 200px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card:hover {
+  box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  padding: 30px 30px 90px;
+}
+
+.card-details {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.card-details-inner {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  height: 5.5rem;
+}
+
+.card p {
+  margin: 0 0 30px;
+  font-size: 1rem;
+}
+
+.subtitle {
+  margin: 0 0 15px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #ff404c;
+}
+
+.button {
+  display: block;
+  font-size: 1rem;
+  background: #ff404c;
+  border: 1px solid #ff404c;
+  padding: .75rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button a {
+  color: white;
+}
+
+.button:hover,
+.dropdown-content a:hover {
+  background-color: #012C40;
+  border: 1px solid  #012C40;
+  color: white;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 970px) {
+
+  /*Allow container to shrink*/
+  main.container {
+    width: auto;
+  }
+
+  /*Allow no more than two cards per line*/
+  .card {
+    flex: 1 1 calc(45% - 1.5rem);
+  }
+
+  .no-button-row .card-content {
+    padding-bottom: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card-image {
+    height: 100px;
+  }
+
+  .card-content {
+    padding: 0.75rem 30px 1rem;
+  }
+
+  .card-details {
+    position: static;
+  }
+
+  .subtitle {
+    margin: 15px 0 15px;
+    text-align: center;
+  }
+
+  .card-content h1 {
+    font-size: 1.25rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    height: auto;
+    line-height: 1.4;
+    text-decoration: underline;
+  }
+
+  .button {
+    position: relative;
+  }
+
+  .dropdown-content {
+    position: relative;
+  }
+
+}
+>>>>>>> heroku/master

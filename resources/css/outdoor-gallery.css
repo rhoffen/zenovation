@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*row 1*/
 #pergola-1 {
   grid-column: 1 / span 6;
@@ -112,3 +113,72 @@
     grid-row: auto;
   }
 }
+=======
+/*row 1*/
+#pergola-1 {
+  grid-column: 1 / span 6;
+  grid-row: 1 / 2;
+}
+
+/*row 2*/
+#lateral-1 {
+  grid-column: 2 / span 4;
+  grid-row: 2 / 3;
+}
+
+/*row 3*/
+#lateral-2 {
+   grid-column: 1 / span 3;
+   grid-row: 3 / 4;
+ }
+
+ #porch-stairs {
+   grid-column: 4 / span 3;
+   grid-row: 3 / 4;
+ }
+
+/*row 4*/
+#zometek-deck {
+  grid-column: 2 / span 4;
+  grid-row: 4 / 5;
+}
+
+/*row 5*/
+#zometek-surface {
+  grid-column: 1 / span 3;
+  grid-row: 5 / 6;
+}
+
+#bamboo-stairs {
+  grid-column: 4 / span 3;
+  grid-row: 5 / 6;
+}
+
+/*row 6*/
+#porch-1 {
+  grid-column: 1 / span 6;
+  grid-row: 6 / 7;
+}
+
+
+
+@media screen and (max-width: 970px) {
+  figcaption {
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #pergola-1,
+  #lateral-1,
+  #lateral-2,
+  #zometek-deck,
+  #zometek-surface,
+  #porch-1,
+  #porch-stairs,
+  #bamboo-stairs {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
+}
+>>>>>>> heroku/master

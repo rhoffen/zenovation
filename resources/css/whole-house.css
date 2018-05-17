@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
   margin: auto;
 }
@@ -234,3 +235,161 @@ figcaption {
     grid-row: auto;
   }
 }
+=======
+.container {
+  margin: auto;
+}
+
+.gallery-title {
+  text-align: center;
+}
+
+h1.gallery-title {
+  padding-top: 1.5rem;
+}
+
+h2.gallery-title {
+  padding-bottom: 2.4rem;
+}
+
+.whole-house-gallery {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 4rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: start;
+  grid-flow: row;
+  padding-bottom: 4.5rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
+  box-shadow: 6px 6px 15px rgba(1, 44, 64, 0.2),
+              -6px -6px 15px rgba(1, 44, 64, 0.2);
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: 83.3%;
+}
+
+figcaption {
+  padding: 1rem;
+  padding-bottom: 2rem;
+  line-height: 1.4;
+}
+
+/*For rows with a three-line caption, re-distribute the figure space*/
+.long-cap-row img {
+  height: 80%;
+}
+
+.long-cap-row figcaption {
+  height: 20%;
+}
+
+/*row 1*/
+#shower-1 {
+  grid-column: 1 / span 6;
+  grid-row: 1 / 2;
+}
+
+#tile-surround {
+   grid-column: 1 / span 3;
+   grid-row: 2 / 3;
+ }
+
+ #basement-bath-addition {
+   grid-column: 4 / span 3;
+   grid-row: 2 / 3;
+ }
+
+#upstairs-bathroom {
+  grid-column: 1 / span 3;
+  grid-row: 3 / 4;
+}
+
+#walk-in-shower {
+  grid-column: 4 / span 3;
+  grid-row: 3 / 4;
+}
+
+
+@media screen and (max-width: 970px){
+
+  .whole-house-gallery.container {
+    width: 90%;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
+
+  figure img {
+    display: block;
+    width: 100%;
+  }
+
+  figcaption {
+    padding-bottom: 2rem;
+    line-height: 1.4;
+    height: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #bef-aft-link {
+    display: none;
+  }
+
+  .whole-house-gallery {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 0;
+    width: 100%;
+  }
+
+  .whole-house-gallery.container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  figure img,
+  .long-cap-row img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  figcaption,
+  .long-cap-row figcaption {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 2.5rem;
+  }
+
+  #shower-1-vanity,
+  #shelves-mirror,
+  #window,
+  #toilet {
+    display: none;
+  }
+
+  #shower-1,
+  #vanity-w-mirror,
+  #tile-surround,
+  #upstairs-bathroom,
+  #walk-in-shower,
+  #vanity-master,
+  #basement-bath-addition {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
+}
+>>>>>>> heroku/master
