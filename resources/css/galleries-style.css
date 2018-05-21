@@ -1,4 +1,7 @@
 .card {
-  /*flex: 1 1 calc(33% - 1.5rem);*/
   max-width: calc(33% - 1.5rem);
+}
+
+#galleries-link {
+  font-weight: bold;
 }
