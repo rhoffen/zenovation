@@ -1,254 +1,53 @@
-.container {
-  margin: auto;
-}
 
-.woodworking-title {
-  text-align: center;
-}
-
-h1.woodworking-title {
-  padding-top: 1.5rem;
-}
-
-h2.woodworking-title {
-  padding-bottom: 2.4rem;
-}
-
-.woodworking-gallery {
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 32rem 32rem 1fr;
-  grid-gap: 4rem;
-  justify-content: center;
-  justify-items: center;
-  align-items: start;
-  grid-flow: row;
-  padding-bottom: 2rem;
-}
-
-figure {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  box-shadow: 6px 6px 15px rgba(1, 44, 64, 0.2),
-              -6px -6px 15px rgba(1, 44, 64, 0.2);
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
-figcaption {
-  padding: 1rem;
-  padding-bottom: 1.6rem;
-  line-height: 1.4;
-  min-height: 7rem;
-}
-
-.tablet {
-  display: none;
-}
-
-#bookcase {
-  -ms-grid-column : 1;
-  -ms-grid-column-span : 2;
-  grid-column : 1 / span 2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-}
-
-#shelf-mirror {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-column: 3 / span 2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
+/*row 1*/
+#spiral-1 {
+  grid-column: 1 / span 3;
   grid-row: 1 / 2;
 }
 
 #live-edge {
-   -ms-grid-column: 5;
-   -ms-grid-column-span: 2;
-   grid-column: 5 / span 2;
-   -ms-grid-row: 1;
-   -ms-grid-row-span: 1;
+   grid-column: 4 / span 3;
    grid-row: 1 / 2;
  }
 
-#spiral-1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 / span 2;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-}
-
-#wall-oven {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-column: 3 / span 2;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
+/*row 2*/
+#bookcase {
+  grid-column : 1 / span 3;
   grid-row: 2 / 3;
 }
 
 #coffee-table-2 {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
-  grid-column: 5 / span 2;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
+  grid-column: 4 / span 3;
   grid-row: 2 / 3;
 }
 
 /*Row 3*/
 #coffee-table-1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
   grid-row: 3 / 4;
 }
 
 #checkerboard {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
   grid-column: 3 / span 2;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
   grid-row: 3 / 4;
 }
 
 #coffee-table-2-detail {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
   grid-column: 5 / span 2;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
   grid-row: 3 / 4;
 }
 
-.vert-img img {
-  height: 90%;
-}
 
 .square-img img {
   height: 19.3rem;
-}
-
-#tablet {
-  display: none;
-}
-
-@media screen and (max-width: 970px) and (min-width: 480px) {
-  .woodworking-gallery {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    margin: auto;
-    grid-gap: 2rem;
-    width: 100%;
-    padding: 1rem 1rem 0.5rem 1rem;
-  }
-
-  /*row 1*/
-  #bookcase {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  #shelf-mirror {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
-
-  /*row 2*/
-  #live-edge {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
-
-  #spiral-1 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
-
-  /*row 3*/
-  #wall-oven {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-  }
-
-  #coffee-table-2 {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-  }
-
-  /*row 4*/
-  #coffee-table-1 {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-  }
-
-  #coffee-table-2-detail {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-  }
-
-  #tablet {
-    display: block;
-    max-height:
-  }
-
-  #coffee-table-2-img {
-    display: none;
-  }
-
-  /*row 5*/
-  #checkerboard {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6;
-    width: auto;
-  }
-
-  #checkerboard img {
-    width: auto;
-    height: auto;
-  }
-
-  .square-img {
-    max-width: 100%;
-  }
-
-  .square-img img {
-    max-width: 100%;
-  }
+  max-width: 100%;
 }
 
 @media screen and (max-width: 480px) {
-  .woodworking-gallery {
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-gap: 0;
-    width: 100%;
-  }
 
-  .woodworking-gallery.container {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0;
-  }
-
-  #bookcase,
-  #shelf-mirror,
-  #live-edge,
   #spiral-1,
-  #wall-oven,
+  #live-edge,
+  #bookcase,
   #coffee-table-2,
   #coffee-table-1,
   #checkerboard,
@@ -258,23 +57,11 @@ figcaption {
   }
 
   #coffee-table-2-detail {
-    grid-row: 7 / 8;
+    grid-row: 5 / 6;
   }
 
-  img,
-  .vert-img img,
   .square-img img {
-    max-width: 100%;
     height: auto;
-  }
-
-  figcaption,
-  .vert-img figcaption
-  .square-img figcaption {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding-bottom: 2.5rem;
   }
 
 }
