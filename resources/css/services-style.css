@@ -89,6 +89,10 @@ h1, h2 {
   font-weight: 700;
 }
 
+.card-title-small {
+  display: none;
+}
+
 @media screen and (max-width: 970px) {
 
   /*Allow container to shrink*/
@@ -129,6 +133,10 @@ h1, h2 {
     position: static;
   }
 
+  .card-details-inner {
+    justify-content: center;
+  }
+
   .subtitle {
     margin: 15px 0 15px;
     text-align: center;
@@ -143,12 +151,24 @@ h1, h2 {
     text-decoration: underline;
   }
 
-  .button {
-    position: relative;
+  #trades-card-img {
+    background-position: center bottom;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  main.container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main.container {
+    width: 100%;
   }
 
-  .dropdown-content {
-    position: relative;
+  .card {
+    width: 100%;
+    margin: 0.5rem 0;
   }
-
 }

@@ -295,6 +295,11 @@ footer span {
     display: block;
   }
 
+  #home-nav {
+    /*border-bottom: 1px solid #1ca5b8;*/
+    border-top: 1px solid #1ca5b8;
+
+  }
   .container {
     width: 100%;
     padding: 0;
@@ -331,8 +336,8 @@ footer span {
     width: 100%;
     padding: 1rem;
     margin: 0.5rem auto;
-    color: #e6eff2;
-    background-color: #012C40;
+    /*color: #e6eff2;*/
+    /*background-color: #012C40;*/
   }
 
   .dropbtn {
@@ -349,8 +354,8 @@ footer span {
       background-color: #e6eff2;
   }
 
-  nav a:last-child {
-    margin-bottom: 0;
+  #galleries-link {
+    padding: 0;
   }
 
   #tagline {
@@ -364,6 +369,7 @@ footer span {
     height: 10rem;
     width: 100%;
     background-size: cover;
+    margin-top: 1rem;
   }
 
   #home {
@@ -390,11 +396,38 @@ footer span {
     background-color: #ccc;
 }
 
+/*Add + and - signs to open/close the panel*/
+.accordion:after {
+    content: '\002B';
+    /*color: #777;*/
+    font-weight: bold;
+    margin-left: 5px;
+    float: right;
+    padding-right: 0.5rem;
+}
+
+.active:after {
+    content: "\2212";
+}
+
 /* Style the accordion panel. Note: hidden by default */
-.panel {
+  .panel {
     padding: 0 18px;
     background-color: white;
     display: none;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    line-height: 1.2;
+  }
+
+  a,
+  .panel a {
+  text-decoration: underline;
+  }
+
+  #about {
+    text-decoration: none;
+    padding-left: 9.8%;
   }
 }

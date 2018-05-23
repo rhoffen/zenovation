@@ -26,8 +26,8 @@
       <nav>
         <a href="./index.html">Home </a>
         <a href="./services.html">Services </a>
-        <div class="dropdown">
-          <div class="dropbtn"><a href="./galleries.html" id="galleries-link">Galleries</a></div>
+        <!-- <div class="dropdown">
+          <div class="dropbtn"><a href="./galleries.html" id="current">Galleries</a></div>
             <div class="dropdown-content">
               <a href="./bathroom-gallery.html">Bathrooms</a>
               <a href="./kitchen-gallery.html">Kitchens</a>
@@ -35,20 +35,21 @@
               <a href="./outdoor-gallery.html">Outdoor</a>
               <a href="./before-after-gallery.html" id="bef-aft-link">Before-After</a>
             </div>
-        </div>        <a class="desktop" href="./contact.html">Contact Us </a>
+        </div> -->
+        <a class="desktop" href="./contact.html">Contact Us </a>
         <a class="mobile" href="./contact.html">Contact</a>
       </nav>
     </header>
-
+    <!-- In mobile version, display card headers as links to the galleries.  For wider screens, use accordion or display outright. -->
     <main class="container">
-      <h2 class="mobile">Services</h2>
-
+      <h2 class="mobile">Galleries</h2>
       <!-- Bathrooms -->
       <div class="card">
         <div class="card-image" style="background-image: url(resources/images/whole-house-images/shower-for-two.jpg)">
         </div>
         <div class="card-content">
-          <h1 class="accordion">Bathroom Gallery</h1>
+          <h1 class="mobile"><a href="./bathroom-gallery.html">Bathroom Gallery</a></h1>
+          <h1 class="desktop accordion">Bathroom Gallery</h1>
           <div class="panel">
             <div class="subtitle">
               Relax and breathe
@@ -69,7 +70,8 @@
     <div class="card">
       <div class="card-image" style="background-image: url(resources/images/whole-house-images/kitchen-1.jpg)"></div>
       <div class="card-content">
-        <h1 class="accordion">Kitchen Gallery</h1>
+        <h1 class="mobile"><a href="./kitchen-gallery.html">Kitchen Gallery</a></h1>
+        <h1 class="desktop accordion">Kitchen Gallery</h1>
         <div class="panel">
           <div class="subtitle">
             Make it flow
@@ -89,7 +91,8 @@
     <div class="card">
       <div class="card-image" style="background-image: url(resources/images/woodworking-card.jpg)"></div>
       <div class="card-content">
-        <h1 class="accordion">Woodworking</h1>
+        <h1 class="mobile"><a href="./woodworking-gallery.html">Woodworking Gallery</a></h1>
+        <h1 class="desktop accordion">Woodworking</h1>
         <div class="panel">
           <div class="subtitle">
             Customize it
@@ -109,7 +112,8 @@
     <div class="card">
       <div class="card-image" style="background-image: url(resources/images/outdoor-images/lateral-fence-1.jpg)"></div>
       <div class="card-content">
-        <h1 class="accordion">Outdoor Gallery</h1>
+        <h1 class="mobile"><a href="./outdoor-gallery.html">Outdoor Gallery</a></h1>
+        <h1 class="desktop accordion">Outdoor Gallery</h1>
           <div class="panel">
               <div class="subtitle">
                 Go play outside
@@ -126,7 +130,8 @@
       </div>
     </div>
     <!-- Before/after card -->
-    <div class="card">
+    <!-- Do not display in mobile version -->
+    <div class="desktop card">
       <div class="card-image" style="background-image: url(resources/images/before-after-images/kitchen-south-after.jpg)"></div>
       <div class="card-content">
         <h1 class="accordion">Before-After</h1>
