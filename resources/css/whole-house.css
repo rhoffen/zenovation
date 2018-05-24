@@ -103,6 +103,19 @@ figcaption {
   }
 }
 
+@media only screen and (max-width: 700px) and (orientation: landscape) {
+  .gallery-subtitle {
+    font-size: 1.25rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  figcaption {
+    min-height: 7.5rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #bef-aft-link {
     display: none;

@@ -243,13 +243,11 @@ footer span {
   text-align: right;
 }
 
-
+#top-link {
+  display: none;
+}
 
 @media screen and (max-width: 970px) {
-
-  /*#home {
-    height: 75%;
-  }*/
 
   .home-page-info {
     padding-top: 1rem;
@@ -257,6 +255,15 @@ footer span {
 
   #mission {
     padding-left: 0;
+  }
+
+  #top-link {
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+    color: inherit;
+    background-color: #e6eff2;
+    text-decoration: underline;
   }
 }
 
@@ -268,12 +275,22 @@ footer span {
   #bef-aft-link {
     display: none;
   }
+
+  #home {
+    height: auto;
+    width: 60%;
+    background-position: 70% top;
+  }
 }
 
 @media screen and (max-width: 672px) {
   nav a,
   .dropbtn {
     padding: 2rem 2rem;
+  }
+
+  .dropbtn a {
+    padding: 0;
   }
 }
 
@@ -442,15 +459,24 @@ footer span {
   }
 }
 
-@media only screen and (max-width: 700px) and (orientation: landscape) {
+@media only screen and (max-width: 740px) and (orientation: landscape) {
 
   .dropbtn {
-    padding: 0;
+    /*padding: 0;*/
+  }
+
+  #current,
+  #bef-aft-link {
+    display: none;
   }
 
   #home {
     height: auto;
     width: 55%;
+  }
+
+  #top-link {
+    display: block;
   }
 
   .spacer {

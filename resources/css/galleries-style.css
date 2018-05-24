@@ -2,9 +2,55 @@
     max-width: calc(33% - 1.5rem);
   }
 
-@media screen and (max-width: 480px) {
+.mobile.button {
+  display: none;
+}
 
+@media screen and (max-width: 970px) {
+  .desktop.card {
+    display: none;
+  }
+
+  .card {
+    max-width: calc(45% - 1.5rem);
+  }
+
+  .button-div {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 970px) and (orientation: landscape) {
+  .desktop.card,
+  .desktop.button {
+    display: none;
+  }
+
+  .mobile.button {
+    display: block;
+  }
+
+  /*.card-details-inner {
+    justify-content: center;
+  }*/
+
+  .button-div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .card {
     max-width: 100%;
   }
+
+  .desktop.card,
+  .desktop.button {
+    display: none;
+  }
+
+  .mobile.button {
+    display: block;
+  }
+
 }

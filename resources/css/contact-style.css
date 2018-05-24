@@ -100,12 +100,13 @@ input[type=submit]:hover, input[type=reset]:hover {
   }
 
   #contact-section .container{
-    max-width: 650px;
+    /*max-width: 650px;*/
+    width: 90%;
   }
 
 }
 
-@media screen and (max-width: 666px) {
+@media screen and (max-width: 768px) {
   .text-fields,
   .container {
     flex-direction: column;
