@@ -46,7 +46,7 @@
 
 
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 970px) and (min-width: 480px) {
   figcaption {
     padding-bottom: 1.5rem;
   }
