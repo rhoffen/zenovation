@@ -322,11 +322,25 @@ footer span {
     display: block;
   }
 
-  #home-nav {
-    /*border-bottom: 1px solid #1ca5b8;*/
-    border-top: 1px solid #1ca5b8;
-
+  .home-nav-container {
+    /*background-image: url("../images/whole-house-images/kitchen-1-crop.jpg");*/
+    /*background-size: cover;*/
+    /*width: 100%;*/
   }
+
+  #home-nav {
+    border-top: 1px solid #1ca5b8;
+    /*background-image: url("../images/whole-house-images/kitchen-1-crop.jpg");*/
+    /*background-color: rgba(230,239,242,0.75);*/
+    background-size: cover;
+    /*position: relative;*/
+    /*box-shadow: inset 0 0 0 1000px rgba(230,239,242,0.55);*/
+  }
+
+  #home-nav a {
+    font-weight: 800;
+  }
+
   .container {
     width: 100%;
     padding: 0;
@@ -363,8 +377,6 @@ footer span {
     width: 100%;
     padding: 1rem;
     margin: 0.5rem auto;
-    /*color: #e6eff2;*/
-    /*background-color: #012C40;*/
   }
 
   .dropbtn {
@@ -397,6 +409,7 @@ footer span {
     width: 100%;
     background-size: cover;
     margin-top: 1rem;
+    /*display: none;*/
   }
 
   #home {
@@ -426,7 +439,6 @@ footer span {
 /*Add + and - signs to open/close the panel*/
 .accordion:after {
     content: '\002B';
-    /*color: #777;*/
     font-weight: bold;
     margin-left: 5px;
     float: right;
