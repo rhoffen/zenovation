@@ -44,12 +44,26 @@
   grid-row: 6 / 7;
 }
 
-
-
 @media screen and (max-width: 970px) and (min-width: 480px) {
   figcaption {
     padding-bottom: 1.5rem;
   }
+}
+
+@media only screen and (max-width: 600px) and
+  (min-width: 481px) and
+  (orientation: portrait) {
+    #pergola-1,
+    #lateral-1,
+    #lateral-2,
+    #zometek-deck,
+    #zometek-surface,
+    #porch-1,
+    #porch-stairs,
+    #bamboo-stairs {
+      grid-column: 1 / 2;
+      grid-row: auto;
+    }
 }
 
 @media screen and (max-width: 480px) {

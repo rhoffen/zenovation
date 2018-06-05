@@ -14,8 +14,6 @@
  }
 
 /*row 2*/
-
-
 #coffee-table-2 {
   grid-column: 1 / span 3;
   grid-row: 2 / 3;
@@ -26,32 +24,48 @@
   grid-row: 2 / 3;
 }
 
-
-
 /*Row 3*/
 #coffee-table-1 {
   grid-column: 1 / span 3;
   grid-row: 3 / 4;
 }
 
-/*#checkerboard {
-  grid-column: 3 / span 2;
-  grid-row: 3 / 4;
-}*/
-
 #bookcase {
   grid-column : 4 / span 3;
   grid-row: 3 / 4;
 }
-
 
 .square-img img {
   height: 19.3rem;
   max-width: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) and
+  (min-width: 481px) and
+  (orientation: portrait) {
+    .gallery-subtitle {
+      max-width: 85%;
+      margin: auto;
+      line-height: 1.4;
+    }
 
+    #spiral-1,
+    #live-edge,
+    #bookcase,
+    #coffee-table-2,
+    #coffee-table-1,
+    #checkerboard,
+    #coffee-table-2-detail {
+      grid-column: 1 / 2;
+      grid-row: auto;
+    }
+
+    #coffee-table-2-detail {
+      grid-row: 5 / 6;
+    }
+}
+
+@media screen and (max-width: 480px) {
   #spiral-1,
   #live-edge,
   #bookcase,
@@ -73,18 +87,6 @@
 }
 
 @media only screen and (max-width: 700px) and (orientation: landscape) {
-
-/*@media only screen and (max-width: 970px) {*/
-
-
-  .container {
-    /*flex-direction: column;*/
-    /*align-items: center;*/
-    /*width: 100%;*/
-    /*margin: auto;*/
-    /*align-items: center;*/
-  }
-
   .whole-house-gallery {
     grid-template-columns: 50% 50%;
     grid-gap: 1.5rem;
@@ -138,38 +140,3 @@
     display: block;
   }
 }
-
-/* Portrait */
-/*@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1)
-  {
-
-    .whole-house-gallery {
-      grid-template-columns: 383.25px 383.25px;
-      grid-gap: 1.5rem;
-      width: 768px;
-    }
-
-    #checkerboard {
-      display: none;
-    }
-
-    #coffee-table-2-detail {
-      grid-column: 2 / 3;
-      grid-row: 3 / 4;
-    }
-
-    #coffee-table-2-detail img {
-      height: 78%;
-    }
-
-    #coffee-table-1 {
-      grid-column: 1 / 2;
-      grid-row: 3 / 4;
-    }
-
-
-}*/

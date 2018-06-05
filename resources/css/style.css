@@ -166,20 +166,11 @@ section {
   background-size: cover;
   background-position: center 55%;
   background-repeat: no-repeat;
-
-}
-#home-section {
-  /*background-image: url("../images/whole-house-images/kitchen-1-crop.jpg");*/
-  /*background-size: cover;*/
-  /*background-position: 30% 70%;*/
-  /*background-repeat: no-repeat;*/
-  /*display: block;*/
 }
 
 #home {
   height: 38.5rem;
   width: 45%;
-  /*float: right;*/
 }
 
 .home-page-info {
@@ -257,7 +248,6 @@ footer .container {
   text-decoration: underline;
 }
 
-
 footer span {
   display: block;
   line-height: 1.5;
@@ -267,24 +257,12 @@ footer span {
   text-align: right;
 }
 
-/*#top-link {
-  display: none;
-}*/
-
-/*@media screen and (max-width: 1024px) and
-  (orientation: portrait) {
-  #top-link {
-    display: block;
-  }
-}*/
-
 @media screen and (max-width: 970px) {
   #home {
     height: auto;
   }
 
   .home-page-info {
-    /*padding-top: 1rem;*/
     height: auto;
     padding-bottom: 1.5rem;
   }
@@ -293,7 +271,6 @@ footer span {
     padding-left: 0;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   #bef-aft-link {
@@ -305,10 +282,6 @@ footer span {
   #mission {
     padding-bottom: 1rem;
   }
-
-  /*#bef-aft-link {
-    display: none;
-  }*/
 
   #home {
     width: 60%;
@@ -345,7 +318,6 @@ footer span {
   }
 }
 
-
 @media screen and (max-width: 480px) {
   .desktop {
     display: none;
@@ -355,19 +327,11 @@ footer span {
     display: block;
   }
 
-  .home-nav-container {
-    /*background-image: url("../images/whole-house-images/kitchen-1-crop.jpg");*/
-    /*background-size: cover;*/
-    /*width: 100%;*/
-  }
-
   #home-nav {
     border-top: 1px solid #1ca5b8;
     background-image: url('../images/woodworking-images/stairs-1.jpg');
-    /*background-color: rgba(230,239,242,0.75);*/
     background-size: cover;
     background-position: center bottom;
-    /*position: relative;*/
     box-shadow: inset 0 0 0 1000px rgba(230,239,242,0.55);
   }
 
@@ -443,7 +407,6 @@ footer span {
     width: 100%;
     background-size: cover;
     margin-top: 1rem;
-    /*display: none;*/
   }
 
   #home {
@@ -505,7 +468,8 @@ footer span {
   }
 }
 
-@media only screen and (max-width: 740px) and (orientation: landscape) {
+@media only screen and (max-width: 740px)
+and (orientation: landscape) {
 
   #current,
   #bef-aft-link {
@@ -516,10 +480,6 @@ footer span {
     height: auto;
     width: 55%;
   }
-
-  /*#top-link {
-    display: block;
-  }*/
 
   .spacer {
     display: none;
@@ -532,8 +492,12 @@ footer span {
   #mission {
     padding-left: 0;
   }
+}
 
-  .panel {
-    display: none;
-  }
+@media only screen and (max-width: 960px) and
+  (min-width: 600px) and
+  (orientation: landscape) {
+    #bef-aft-link {
+      display: none;
+    }
 }

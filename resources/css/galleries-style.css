@@ -6,6 +6,10 @@
   display: none;
 }
 
+#current.dropdown-content {
+  font-weight: normal;
+}
+
 @media screen and (max-width: 970px) {
   .desktop.card {
     display: none;
@@ -20,7 +24,8 @@
   }
 }
 
-@media screen and (max-width: 970px) and (orientation: landscape) {
+@media screen and (max-width: 970px)
+and (orientation: landscape) {
   .desktop.card,
   .desktop.button {
     display: none;
@@ -29,10 +34,6 @@
   .mobile.button {
     display: block;
   }
-
-  /*.card-details-inner {
-    justify-content: center;
-  }*/
 
   .button-div {
     width: 100%;

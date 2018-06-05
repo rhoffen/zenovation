@@ -44,12 +44,9 @@
     justify-items: start;
     align-items: start;
     margin: -1rem auto 1rem;
-    /*flex-wrap: wrap;*/
   }
 
   .gallery-sub-nav a {
-    /*display: inline-block;*/
-    /*text-align: left;*/
     padding: 0;
   }
 
