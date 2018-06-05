@@ -94,6 +94,12 @@ a.mobile:hover,
   color: #ff404c;
   padding: 0;
 }
+
+#contact-text-link {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
 /*Make the current page bold*/
 #current {
   font-size: 1.1rem;
@@ -208,6 +214,15 @@ p {
   padding: 0.5rem 0;
 }
 
+#top-link {
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+  color: inherit;
+  background-color: #e6eff2;
+  text-decoration: underline;
+}
+
 /*Keeps footer glued to bottom of page on larger screens*/
 .spacer {
   flex-grow: 1;
@@ -252,27 +267,37 @@ footer span {
   text-align: right;
 }
 
-#top-link {
+/*#top-link {
   display: none;
-}
+}*/
+
+/*@media screen and (max-width: 1024px) and
+  (orientation: portrait) {
+  #top-link {
+    display: block;
+  }
+}*/
 
 @media screen and (max-width: 970px) {
+  #home {
+    height: auto;
+  }
 
   .home-page-info {
-    padding-top: 1rem;
+    /*padding-top: 1rem;*/
+    height: auto;
+    padding-bottom: 1.5rem;
   }
 
   #mission {
     padding-left: 0;
   }
+}
 
-  #top-link {
-    display: block;
-    text-align: center;
-    margin: 1rem auto;
-    color: inherit;
-    background-color: #e6eff2;
-    text-decoration: underline;
+
+@media only screen and (max-width: 768px) {
+  #bef-aft-link {
+    display: none;
   }
 }
 
@@ -281,12 +306,11 @@ footer span {
     padding-bottom: 1rem;
   }
 
-  #bef-aft-link {
+  /*#bef-aft-link {
     display: none;
-  }
+  }*/
 
   #home {
-    height: auto;
     width: 60%;
     background-position: 70% top;
   }
@@ -493,9 +517,9 @@ footer span {
     width: 55%;
   }
 
-  #top-link {
+  /*#top-link {
     display: block;
-  }
+  }*/
 
   .spacer {
     display: none;
