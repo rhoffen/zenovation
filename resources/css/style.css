@@ -8,6 +8,7 @@ html {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
 *, *:before, *:after {
@@ -19,6 +20,8 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  /*position: relative;*/
+
 }
 
 /*Header styling for desktop*/
@@ -149,7 +152,7 @@ a.mobile:hover,
 section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 /*Contain desktop content to 960px*/
@@ -159,24 +162,30 @@ section {
   padding-top: 1rem;
 }
 
+/*Home page styling*/
+#home-section {
+  /*height: 75vh;*/
+}
+
 .featured-image {
   height: 100%;
-  width: 60%;
+  width: 50%;
   background-image: url('../images/woodworking-images/stairs-1.jpg');
   background-size: cover;
-  background-position: center 55%;
+  background-position: center 95%;
   background-repeat: no-repeat;
 }
 
 #home {
-  height: 38.5rem;
-  width: 45%;
+  /*height: 38.5rem;*/
+  width: 50%;
+  /*height: auto;*/
 }
 
 .home-page-info {
   background-color: rgba(230,239,242,0.75);
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -186,21 +195,21 @@ section {
 }
 
 #tagline {
-  max-width: 90%;
+  max-width: 70%;
 }
 
 #mission {
-  max-width: 80%;
+  max-width: 70%;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   padding: 1rem 0;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.4;
   padding: 0.5rem 0;
 }
@@ -257,9 +266,33 @@ footer span {
   text-align: right;
 }
 
+@media only screen
+  and (max-width: 1024px)
+  and (orientation: portrait) {
+    #tagline {
+      font-size: 3rem;
+      max-width: 90%;
+    }
+
+    .featured-image {
+      height: 70vh;
+    }
+
+    #mission p {
+      font-size: 1.63rem;
+      max-width: 98%;
+    }
+  }
+
 @media screen and (max-width: 970px) {
   #home {
     height: auto;
+  }
+
+  #tagline {
+    font-size: 1.75rem;
+    max-width: 95%;
+    padding-top: 0;
   }
 
   .home-page-info {
@@ -269,6 +302,9 @@ footer span {
 
   #mission {
     padding-left: 0;
+    font-size: .85rem;
+    max-width: 95%;
+    line-height: 1;
   }
 }
 
@@ -278,6 +314,19 @@ footer span {
   }
 }
 
+@media only screen
+  and (max-width: 768px)
+  and (orientation: portrait) {
+    #tagline {
+      font-size: 2.5rem;
+    }
+
+    .featured-image {
+      height: 80vh;
+    }
+  }
+
+
 @media screen and (max-width: 700px) {
   #mission {
     padding-bottom: 1rem;
@@ -285,7 +334,6 @@ footer span {
 
   #home {
     width: 60%;
-    background-position: 70% top;
   }
 }
 
@@ -481,16 +529,29 @@ and (orientation: landscape) {
     width: 55%;
   }
 
-  .spacer {
-    display: none;
+  .featured-image {
+    height: 732px;
+    flex-basis: auto;
+    align-self: flex-start;
+    overflow: hidden;
   }
 
   .home-page-info {
     padding-top: 1rem;
   }
 
-  #mission {
+  #mission p{
     padding-left: 0;
+    font-size: 1.25rem;
+  }
+
+  h1.desktop {
+    font-size: 2rem;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
   }
 }
 
@@ -500,4 +561,14 @@ and (orientation: landscape) {
     #bef-aft-link {
       display: none;
     }
+}
+
+@media only screen and (max-width: 320px) {
+  #tagline {
+    font-size: 1.5rem;
+  }
+
+  .company-block img.mobile {
+    margin-bottom: 1rem;
+  }
 }

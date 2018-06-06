@@ -50,6 +50,34 @@
   }
 }
 
+@media only screen
+  and (max-width: 768px)
+  and (min-width: 700px)
+  and (orientation: landscape) {
+    .whole-house-gallery {
+      grid-template-rows: auto auto 480px 480px 480px auto;
+    }
+
+    .cap-adjust img {
+      height: 75%;
+    }
+  }
+
+@media only screen and (max-width: 700px)
+  and (orientation: landscape) {
+    #pergola-1,
+    #lateral-1,
+    #lateral-2,
+    #zometek-deck,
+    #zometek-surface,
+    #porch-1,
+    #porch-stairs,
+    #bamboo-stairs {
+      grid-column: 1 / 2;
+      grid-row: auto;
+    }
+}
+
 @media only screen and (max-width: 600px) and
   (min-width: 481px) and
   (orientation: portrait) {

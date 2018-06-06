@@ -104,7 +104,9 @@ figcaption {
   }
 }
 
-@media only screen and (max-width: 700px) and (orientation: landscape) {
+@media only screen and (max-width: 700px)
+  and (orientation: landscape) {
+
   .gallery-subtitle {
     font-size: 1.25rem;
     width: 80%;
@@ -112,10 +114,38 @@ figcaption {
     margin-top: 1rem;
   }
 
-  figcaption {
-    min-height: 8.5rem;
+  .whole-house-gallery {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    width: 80%;
   }
+
+  #shower-1,
+  #vanity-w-mirror,
+  #tile-surround,
+  #upstairs-bathroom,
+  #walk-in-shower,
+  #vanity-master,
+  #basement-bath-addition {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
+
+  figure img,
+  figure figcaption,
+  .long-cap-row img,
+  .long-cap-row figcaption {
+    height: auto;
+  }
+
+  figure figcaption,
+  .long-cap-row figcaption {
+    padding-bottom: 4rem;
+  }
+
 }
+
 
 @media only screen and (max-width: 600px) and
   (min-width: 481px) and

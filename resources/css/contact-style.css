@@ -1,6 +1,9 @@
 h1, h2 {
   font-weight: 700;
 }
+/*#contactform {
+  height: 50vh;
+}*/
 
 #contact-section {
   flex-direction: column;
@@ -82,6 +85,10 @@ input[type=submit], input[type=reset] {
 input[type=submit]:hover, input[type=reset]:hover {
   background-color: #012C40;
   color: #e6eff2;
+}
+
+.spacer {
+  background-color: inherit;
 }
 
 @media screen and (max-width: 970px) {

@@ -17,7 +17,7 @@ section .container {
   background-color: rgba(230,239,242,0.75);
 }
 
-@media only screen and (max-width: 740px) and (orientation: landscape) {
+@media only screen and (max-width: 850px) and (orientation: landscape) {
   section .container {
     height: auto;
     padding-top: 0;
