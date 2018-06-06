@@ -254,6 +254,11 @@ footer .container {
 }
 
 #wbr-mail {
+  /*text-decoration: underline;*/
+  text-align: right;
+}
+
+#wbr-mail a {
   text-decoration: underline;
 }
 

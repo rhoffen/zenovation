@@ -1,9 +1,6 @@
 h1, h2 {
   font-weight: 700;
 }
-/*#contactform {
-  height: 50vh;
-}*/
 
 #contact-section {
   flex-direction: column;
@@ -164,7 +161,7 @@ input[type=submit]:hover, input[type=reset]:hover {
   }
 
   .zen-info,
-  .wbr-info
+  .wbr-info,
   #rights {
     text-align: center;
   }
