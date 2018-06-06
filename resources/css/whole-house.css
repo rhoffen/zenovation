@@ -1,3 +1,4 @@
+/*Styling for all galleries, and arrangement for bathroom gallery*/
 .container {
   margin: auto;
 }
@@ -112,7 +113,7 @@ figcaption {
   }
 
   figcaption {
-    min-height: 7.5rem;
+    min-height: 8.5rem;
   }
 }
 
