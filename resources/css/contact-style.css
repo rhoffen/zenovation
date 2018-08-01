@@ -73,6 +73,10 @@ textarea {
   justify-content: flex-end;
 }
 
+input[type=file] {
+  padding-left: 0;
+}
+
 input[type=submit], input[type=reset] {
   width: 20%;
   transition: all 250ms;
