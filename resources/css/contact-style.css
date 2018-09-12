@@ -88,6 +88,13 @@ input[type=submit]:hover, input[type=reset]:hover {
   color: #e6eff2;
 }
 
+.uploadcare--widget__button_type_open {
+  margin-top: 1rem;
+  border-radius: 0;
+  color: #012C40;
+  background-color: white;
+}
+
 .spacer {
   background-color: inherit;
 }

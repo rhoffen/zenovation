@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="resources\images\pagoda-logo_d200.jpg" type="image/x-icon">
     <link rel="icon" href="resources\images\pagoda-logo_d200.jpg" type="image/x-icon">
+    <script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
   </head>
   <body>
     <header>
@@ -58,7 +59,8 @@
               <span>Location - Portland neighborhood or cross street</span>
               <input type="text" name="location" placeholder="Location" required="">
               <span>Attach an image (optional)</span>
-              <input type="file" name="pic" accept="image/*">
+              <input type="hidden" role="uploadcare-uploader" name="content" data-public-key="827f6666107caf3c51e4" data-images-only />
+              <!-- <input type="file" name="pic" accept="image/*"> -->
             </div>
             <div id="project-field">
               <span id="description-caption">Tell us about your project</span>
